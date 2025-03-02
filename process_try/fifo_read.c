@@ -40,5 +40,6 @@ int main(int argc, char const *argv[])
     {
         perror("unlink");
     }
+    close(fd);
     return 0;
 }
