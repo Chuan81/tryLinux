@@ -65,3 +65,13 @@ unnamed_pipe_test:unnamed_pipe_test.c
 	-$(CC) -o $@ $^
 	-./$@ Hello,World!
 	-rm ./$@
+
+fifo_read:fifo_read.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
+	
+fifo_write:fifo_write.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
