@@ -1,0 +1,67 @@
+CC := gcc
+
+system_test:system_test.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
+
+fork_test:fork_test.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
+
+fork_fid_test:fork_fid_test.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
+
+erlou:erlou.c
+	-$(CC) -o $@ $^
+
+execve_test:execve_test.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
+
+fork_execve_test:fork_execve_test.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
+
+waitpid_test:waitpid_test.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
+
+pstree_test:pstree_test.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
+
+erlou_block:erlou_block.c
+	-$(CC) -o $@ $^
+	
+orphan_process_test:orphan_process_test.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
+
+perror_test:perror_test.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
+
+errorno_test:errorno_test.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
+
+process_test:process_test.c
+	-$(CC) -o $@ $^
+	-./$@
+	-rm ./$@
+
+unnamed_pipe_test:unnamed_pipe_test.c
+	-$(CC) -o $@ $^
+	-./$@ Hello,World!
+	-rm ./$@
